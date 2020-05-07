@@ -1,23 +1,20 @@
 \documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 
 %A Few Useful Packages
-\usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
-\RequirePackage{color,graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
+				%for loading fonts
+\usepackage{xltxtra,parskip} 	%other packages for formatting
+
+
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{supertabular} 				%for Grades
+% an alternative to Layaureo can be ** \usepackage{fullpage} **			%for Grades
 \usepackage{titlesec}					%custom \section
 
-%Setup hyperref package, and colours for links
-\usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%FONTS
-\defaultfontfeatures{Mapping=tex-text}
+%Setup hyperref package, and colours for links
+
+
+
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
@@ -36,15 +33,13 @@ ItalicFont = Fontin-Italic.otf
 %\addtolength{\voffset}{-1.3cm}
 
 %Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
-\usepackage[absolute]{textpos}
 
-\setlength{\TPHorizModule}{30mm}
-\setlength{\TPVertModule}{\TPHorizModule}
-\textblockorigin{2mm}{0.65\paperheight}
-\setlength{\parindent}{0pt}
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%setlength{\parindent}{0pt}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -64,12 +59,11 @@ ItalicFont = Fontin-Italic.otf
 
 \pagestyle{empty} % non-numbered pages
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
-
 %--------------------TITLE-------------
 \par{\centering
 		{\Huge Sebastian \textsc{Martin}
-	}\bigskip\par}
+	%}\bigskip\par}
+	}\par}
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data\
@@ -85,17 +79,22 @@ ItalicFont = Fontin-Italic.otf
 %Section: Work Experience at the top
 \section{Work Experience}
 \begin{tabular}{r|p{11cm}}
- \textsc{June 2019 2017 - Present} & Dominion Energy
+ \textsc{June 2019 - Present} & Dominion Energy
  \\&\emph{Application Developer}\\
- &\footnotesize{Developed in house applications, for improving the efficiency of gas and electric sales. Led support for teams with modern technologies such as SalesForce and Azure. }\\\multicolumn{2}{c}{} \\
+ &\footnotesize{Developed and supported web and console applications for improving the efficiency of gas and electric sales.  
+Implemented solutions using modern technologies including Salesforce, REST API, SQL, and ASP.Net.} \\ & \footnotesize{Motivated to expand personal repertoire of application development and efficient problem solving skills.
+ }\\\multicolumn{2}{c}{} \\
 
  \textsc{May 2017 - June 2019} & SCANA
  \\&\emph{Intern}\\
- &\footnotesize{Developed in house application for SCANA, PSNC, and SCE\&G. Supported existing applications used by the sales team with feedback and improvement from users. Presented a new application to users which automated manual data entries for the Charleston Sales division. }\\\multicolumn{2}{c}{} \\
+ &\footnotesize{Collaborated with user feedback to enhance and upgrade in-house applications.} \\& \footnotesize{Presented and deployed a new application to the Charleston Sales division that automated data entry.
+ }\\\multicolumn{2}{c}{} \\
  
 
  \textsc{Jun. 2016 - Feb. 2017} & \textsc{Pure Power Technologies} 
- \\&\emph{Intern}\\&\footnotesize{Analyzed data from R\&D development of diesel fuel injectors, and turbo chargers.} \\ & \footnotesize{Assisted with the dissassembly of diesel engines and turbo chargers for remanufacturing. Contributed to the contruction of test cells for stress testing fuel injectors.}\\\multicolumn{2}{c}{} 
+ \\&\emph{Intern}\\&\footnotesize{Analyzed endurance data from R\&D development of diesel fuel injectors and turbochargers.} \\& \footnotesize{ 
+Disassembled diesel engines and turbochargers for remanufacturing and constructed test cells for stress testing fuel injectors. 
+}\\\multicolumn{2}{c}{} 
 \end{tabular}
 
 %Section: Education
@@ -103,37 +102,39 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{r|l}	
 \textsc{Aug. 2015 - May 2019     }    & \textsc{University of South Carolina (USC), Columbia}\\ &\emph{Computer Science} B.S. \\
 & \footnotesize{3.54 GPA | Credit Hours: 132.0 }\\
-& \footnotesize{Computer Forensics Application Area } \\
-& \footnotesize{CyberSecurity Specialization}
+& \footnotesize{CyberSecurity Specialization} \\
+& \footnotesize{Computer Forensics Application Area } 
 \end{tabular}
 \section{Skills}
 \begin{tabular}{r|l}
-\textsc{Proficient     }& Python, C\#, C++, Java, SQL, mySQL, ASP.net FrameWork, REST API's, \\ &SOAP API's, git, Android Application Development, Source Control\\ 
+\textsc{Proficient     }& Python, C\#, C++, Java, SQL, mySQL, Salesforce, ASP.Net FrameWork, REST API,\\& SOAP API, MongoDB, Linux, git, Android Application Development, TFS, MS Office\\ 
 \\
-Intermediate &  Angular JS, Node, Express JS, SalesForce, SalesCloud, Azure, MSOffice, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}, Linux\\\\
- Basic & PHP, JavaScript, Apache2, Full LAMP Stack, Full MEAN Stack 
+Intermediate &  Angular JS, Node JS, Express JS, Oracle Sales Cloud, JavaScript, Azure, LATEX, Flask \\\\
+ Basic & PHP, Apache2, Full LAMP Stack, Full MEAN Stack 
 
 \end{tabular}
 
 \section{Extracurriculars}
 \begin{tabular}{r|l}
- \textsc{Aug.} 2018 - \textsc{May} 2019  &  Capstone project team leader, managed 5 people in design,\\ & development, and publishing of an  Android Application.\\
- \textsc{Aug.} 2015 - \textsc{May} 2019   & Participated in  biannual Association of Computing Machinery (ACM)\\ & Code-a-thon competitions at USC.\\
-  \textsc{Aug.} 2016 - \textsc{May} 2019   & Member of the ACM organization.\\
+ \textsc{Aug.} 2018 - \textsc{May} 2019  &  \emph{Senior Capstone Project Team Leader} - Managed 5 peers in the design, \\& development, and deployment of an Android Application. 
+\\
+ \textsc{Aug.} 2015 - \textsc{May} 2019   & \emph{Member of the Association of Computing Machinery} - participated in \\& biannual Code-a thon competition and attended guest lectures. \\
 \end{tabular}
 
 %Section: Scholarships and additional info
 \section{Scholarships and Certificates}
 \begin{tabular}{r|l}
- \textsc{Aug.} 2015 - \textsc{May} 2019   & Palmetto Life Schoalrship\normalsize\\
- \textsc{Aug.} 2015 - Current  & University of South Carolina Deans list, awarded 5 times.\\
- \textsc{May} 2019  & CyberSecurity Specialization certificate awarded by University of South Carolina.
+ \textsc{May} 2019  & CyberSecurity Specialization certificate awarded by University of South Carolina. \\
+  \textsc{Aug.} 2015 - Current  & University of South Carolina Deans list, awarded 5 times.\\
+ \textsc{Aug.} 2015 - \textsc{May} 2019   & Palmetto Life Schoalrship\normalsize
+
+
 \end{tabular}
 
 %Section: Languages
-\section{Forign Languages}
+\section{Foreign Languages}
 \begin{tabular}{r|l}
-\textsc{German:}&Fluent Speaking/Listening | Intermediate Reading/Writing (Native Speaker)\\
+\textsc{German:}&Native Speaker\\
 \end{tabular}
 
 
