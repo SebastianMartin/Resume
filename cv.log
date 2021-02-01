@@ -1,6 +1,6 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.8)  5 MAY 2020 20:41
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.8)  1 FEB 2021 11:02
  restricted system commands enabled.
-**cv
+**cv.tex MartinSebastianResume2.pdf
 (./cv.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.100 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
@@ -538,17 +538,17 @@ Overfull \hbox (45.34952pt too wide) in paragraph at lines 126--133
 (./cv.aux))
 
 Here is how much of LuaTeX's memory you used:
- 13290 strings out of 494291
+ 13291 strings out of 494291
  125171,460012 words of node,token memory allocated
  455 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 57 glue_spec,
  5 attribute_list, 1 write nodes
-   avail lists: 1:1,2:669,3:90,4:5,5:137,6:27,7:2885,8:3,9:327,10:4,11:213
+   avail lists: 1:1,2:669,3:90,4:5,5:134,6:27,7:2862,8:2,9:327,10:4,11:212
  17315 multiletter control sequences out of 65536+600000
  52 fonts using 7016087 bytes
- 54i,8n,70p,1186b,446s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 54i,8n,70p,1217b,446s stack positions out of 5000i,500n,10000p,200000b,100000s
 <./Fontin-Italic.otf><./Fontin-SmallCaps.otf><./Fontin.otf>
-Output written on cv.pdf (1 page, 20468 bytes).
+Output written on cv.pdf (1 page, 20454 bytes).
 
 PDF statistics: 29 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
