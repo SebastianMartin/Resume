@@ -1,61 +1,24 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
+\usepackage[a4paper,margin=.5in,footskip=0.25in]{geometry}
 
-%A Few Useful Packages
-				%for loading fonts
 \usepackage{xltxtra,parskip} 	%other packages for formatting
 
 
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **			%for Grades
 \usepackage{titlesec}					%custom \section
 
-
-%Setup hyperref package, and colours for links
-
-
-
-%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-%%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
 SmallCapsFont = Fontin-SmallCaps.otf,
 BoldFont = Fontin-Bold.otf,
 ItalicFont = Fontin-Italic.otf
 ]
 {Fontin.otf}
-%%%
 
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
-%\addtolength{\voffset}{-1.3cm}
-
-%Italian hyphenation for the word: ''corporations''
-
-%-------------WATERMARK TEST [**not part of a CV**]---------------
-
-%\setlength{\TPHorizModule}{30mm}
-%\setlength{\TPVertModule}{\TPHorizModule}
-%\textblockorigin{2mm}{0.65\paperheight}
-%setlength{\parindent}{0pt}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm 
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
 
 \pagestyle{empty} % non-numbered pages
 
@@ -71,22 +34,28 @@ ItalicFont = Fontin-Italic.otf
 	\begin{tabular}{r|l}
     \textsc{Address:}   & Slidell LA 70458\\
     \textsc{Phone:}     & (803) 546-9497\\
-    \textsc{email:}     & {mailman.sebastian@gmail.com}
+    \textsc{Email:}     & {mailman.sebastian@gmail.com}
 \end{tabular}
 \end{center}
+
 
 
 %Section: Work Experience at the top
 \section{Work Experience}
 \begin{tabular}{r|p{11cm}}
- \textsc{June 2019 - Present} & Dominion Energy
+ \textsc{Sept 2020 - Present} & PAE
+ \\&\emph{Software Engineer}\\
+ &\footnotesize{Contracted with NOAA to program varius features including Iridiam satellite communication protocols, and media storage interfaces for data bouys.} \\ & \footnotesize{Expanded on my knowledge of efficient pragramming and embedded systems to create elegent solutions to both power and computing limitations.
+ }\\\multicolumn{2}{c}{} \\
+
+ \textsc{June 2019 - Sept 2020} & Dominion Energy
  \\&\emph{Application Developer}\\
  &\footnotesize{Developed and supported web and console applications for improving the efficiency of gas and electric sales.  
 Implemented solutions using modern technologies including Salesforce, REST API, SQL, and ASP.Net.} \\ & \footnotesize{Motivated to expand personal repertoire of application development and efficient problem solving skills.
  }\\\multicolumn{2}{c}{} \\
 
  \textsc{May 2017 - June 2019} & SCANA
- \\&\emph{Intern}\\
+ \\&\emph{Application Developer (Intern)}\\
  &\footnotesize{Collaborated with user feedback to enhance and upgrade in-house applications.} \\& \footnotesize{Presented and deployed a new application to the Charleston Sales division that automated data entry.
  }\\\multicolumn{2}{c}{} \\
  
@@ -107,10 +76,9 @@ Disassembled diesel engines and turbochargers for remanufacturing and constructe
 \end{tabular}
 \section{Skills}
 \begin{tabular}{r|l}
-\textsc{Proficient     }& Python, C\#, C++, Java, SQL, mySQL, Salesforce, ASP.Net FrameWork, REST API,\\& SOAP API, MongoDB, Linux, git, Android Application Development, TFS, MS Office\\ 
+\textsc{Proficient     }& React, Javascript ES6, HTML5, CSS3, MongoDB, git, AWS, Redux, Node JS, Express JS,\\& Python, C, C\#, C++, Java, SQL, mySQL REST API, SOAP API, Linux,\\& Android Application Development, TFS, MS Office\\ 
 \\
-Intermediate &  Angular JS, Node JS, Express JS, Oracle Sales Cloud, JavaScript, Azure, LATEX, Flask \\\\
- Basic & PHP, Apache2, Full LAMP Stack, Full MEAN Stack 
+Intermediate &  Angular JS, Oracle Sales Cloud, JavaScript, Azure, LATEX, Flask, PHP, Apache2,\\& Full LAMP Stack, Full MEAN Stack, Salesforce, ASP.Net FrameWork,
 
 \end{tabular}
 
