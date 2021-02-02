@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.8)  1 FEB 2021 13:00
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.8)  2 FEB 2021 10:06
  restricted system commands enabled.
 **cv.tex MartinSebastianResume2.pdf
 (./cv.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.066 seconds
+luaotfload | main : initialization completed in 0.172 seconds
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
@@ -543,12 +543,12 @@ Here is how much of LuaTeX's memory you used:
  455 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 57 glue_spec,
  5 attribute_list, 1 write nodes
-   avail lists: 1:1,2:685,3:91,4:6,5:143,6:29,7:3299,8:2,9:353,10:5,11:252
+   avail lists: 1:1,2:685,3:91,4:6,5:144,6:29,7:3303,8:2,9:353,10:5,11:255
  17315 multiletter control sequences out of 65536+600000
  52 fonts using 7016087 bytes
  54i,8n,70p,1217b,446s stack positions out of 5000i,500n,10000p,200000b,100000s
 <./Fontin-Italic.otf><./Fontin-SmallCaps.otf><./Fontin.otf>
-Output written on cv.pdf (1 page, 20940 bytes).
+Output written on cv.pdf (1 page, 20944 bytes).
 
 PDF statistics: 29 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
