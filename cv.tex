@@ -1,12 +1,12 @@
-\documentclass[a4paper,10pt]{article}
-\usepackage[a4paper,margin=1in,bottom=1cm,footskip=0.25in]{geometry}
-
+\documentclass[letterpaper,10pt]{article}
+\usepackage[letterpaper,margin=.5in,bottom=1cm,footskip=0.25in]{geometry}
+\usepackage{setspace}
 \usepackage{xltxtra,parskip} 	%other packages for formatting
+\usepackage[dvipsnames]{xcolor}
 
-
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
+			%better formatting of the A4 page
 \usepackage{titlesec}					%custom \section
-
+\definecolor{HeaderColor}{HTML}{163b78}
 \setmainfont[
 SmallCapsFont = Fontin-SmallCaps.otf,
 BoldFont = Fontin-Bold.otf,
@@ -24,15 +24,17 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{\centering
-		{\Huge Sebastian \textsc{Martin}
-	%}\bigskip\par}
-	}\par}
+{\fontsize{40}{0}\selectfont Sebastian Martin}
+\par}
+    
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data\
 \begin{center}
+    {\fontsize{12}{40}\selectfont \textcolor{HeaderColor}{Full Stack Software Developer}}
+\end{center}
+\begin{center}
 	\begin{tabular}{r|l}
-    \textsc{Address:}   & Slidell LA 70458\\
     \textsc{Phone:}     & (803) 546-9497\\
     \textsc{Email:}     & {mailman.sebastian@gmail.com}
 \end{tabular}
@@ -41,63 +43,64 @@ ItalicFont = Fontin-Italic.otf
 
 
 %Section: Work Experience at the top
-\section{Work Experience}
-\begin{tabular}{r|p{11cm}}
- \textsc{Sept 2020 - Present} & PAE
- \\&\emph{Software Engineer}\\
- &\footnotesize{Contracted with NOAA to program various features including Iridium satellite communication protocols, and media storage interfaces for data buoys.} \\ & \footnotesize{Expanded on my knowledge of efficient programming and embedded systems to create elegant solutions to both power and computing limitations.
+\section{\textcolor{HeaderColor}{Experience}}
+\begin{tabular}{r|p{14cm}}
+\textsc{May 2021 - Present} & {\bf MentorWorks Education Capital} - Boston, MA (Remote)
+\\&\emph{\textcolor{HeaderColor}{Full Stack Software Developer}}
+\\& \small{ - Designed, engineered, and implemented large scale full stack web applications to allow customer interaction with our services and for internal users to manage client data}
+\vspace{.1cm}
+\\& \small{ - Worked in a fast paced start-up environment to roll out both front-end and back-end software with Next.js/React.js, cloud services, Python, Firebase, and other technologies }
+\vspace{.1cm}
+\\& \small{ - Quickly took the responsibility to lead new projects, inherit existing tasks, and train new employees in a high demand setting, with extremely limited staff }
+\vspace{.1cm}
+\\& \small{ - Communicated with customers to develop and upgrade applications}
+\\\multicolumn{2}{c}{} \\
+
+ \textsc{Sept 2020 - May 2021} & {\bf Pacific Architects and Engineers} - Stennis Space Center, MS
+ \\&\emph{\textcolor{HeaderColor}{Software Engineer}}\\
+ &\small{ - Contracted with NOAA to program various features including iridium satellite communication protocols and media storage interfaces for data buoys.} 
+ \vspace{.1cm}
+ \\& \small{ - Expanded on my knowledge of efficient programming and embedded systems to create elegant solutions for both power and computing limitations
  }\\\multicolumn{2}{c}{} \\
 
- \textsc{June 2019 - Sept 2020} & Dominion Energy
- \\&\emph{Application Developer}\\
- &\footnotesize{Developed and supported web and console applications for improving the efficiency of gas and electric sales.  
-Implemented solutions using modern technologies including Salesforce, REST API, SQL, and ASP.Net.} \\ & \footnotesize{Motivated to expand personal repertoire of application development and efficient problem solving skills.
- }\\\multicolumn{2}{c}{} \\
+ \textsc{May 2017 - Sept 2020} & {\bf Dominion Energy} - Cayce, SC
+ \\&\emph{\textcolor{HeaderColor}{Application Developer}}
+ \\ &\small{ - Created and enhanced Angular.js and ASP.NET full-stack web applications to improve customer experience} 
+ \vspace{.1cm}
+ \\ &\small{ - Developed and supported web and console applications to streamline the efficiency of gas and electric sales} 
+ \vspace{.1cm}
+ \\ & \small{ - Implemented solutions using modern technologies including Angular.js, Salesforce, REST APIs, SQL, and ASP.NET} \\ & 
+ \\&\emph{\textcolor{HeaderColor}{Application Developer (Intern)}}\\
+ &\small{ - Worked with a team and learned valuable skills about software development lifecycle, source control, and team management } 
+ \vspace{.1cm}
+ \\& \small{ - Presented and deployed a new application to the Charleston Sales division that automated data entry
+ }
+ \\\multicolumn{2}{c}{} \\
 
- \textsc{May 2017 - June 2019} & SCANA
- \\&\emph{Application Developer (Intern)}\\
- &\footnotesize{Collaborated with user feedback to enhance and upgrade in-house applications.} \\& \footnotesize{Presented and deployed a new application to the Charleston Sales division that automated data entry.
- }\\\multicolumn{2}{c}{} \\
- 
-
- \textsc{Jun. 2016 - Feb. 2017} & \textsc{Pure Power Technologies} 
- \\&\emph{Intern}\\&\footnotesize{Analyzed endurance data from R\&D development of diesel fuel injectors and turbochargers.} \\& \footnotesize{ 
-Disassembled diesel engines and turbochargers for remanufacturing and constructed test cells for stress testing fuel injectors. 
-}\\\multicolumn{2}{c}{} 
 \end{tabular}
 
 %Section: Education
-\section{Education}
+\section{\textcolor{HeaderColor}{Education}}
 \begin{tabular}{r|l}	
-\textsc{Aug. 2015 - May 2019     }    & \textsc{University of South Carolina (USC), Columbia}\\ &\emph{Computer Science} B.S. \\
-& \footnotesize{3.54 GPA | Credit Hours: 132.0 }\\
-& \footnotesize{CyberSecurity Specialization} \\
-& \footnotesize{Computer Forensics Application Area } 
+\textsc{Aug. 2015 - May 2019     }    & \textsc{{\bf University of South Carolina} - Columbia}\\ &\textcolor{HeaderColor}{\emph{Computer Science B.S.}} \\
+& \small{Cybersecurity Specialization} \\
+& \small{Computer Forensics Application Area } 
 \end{tabular}
-\section{Skills}
+\section{\textcolor{HeaderColor}{Skills}}
 \begin{tabular}{r|l}
-\textsc{Proficient     }& React, Javascript ES6, HTML5, CSS3, MongoDB, git, AWS, Redux, Node JS, Express JS,\\& Python, C, C\#, C++, Java, SQL, mySQL REST API, SOAP API, Linux,\\& Android Application Development, TFS, MS Office\\ 
+\textsc{Proficient     }& React.js, Next.js, Javascript/TypeScript, Python, AWS Cloud Services, GCP Cloud, Firebase, node.js, \\& git, Angular.js, Java, CI/CD, Redux, MongoDB, C, C\#, C++, SQL, mySQL, REST API, HTML5, CSS3, Flask,  \\& Express.js, Linux, TFS, MS Office\\ 
 \\
-Intermediate &  Angular JS, Oracle Sales Cloud, JavaScript, Azure, LATEX, Flask, PHP, Apache2,\\& Full LAMP Stack, Full MEAN Stack, Salesforce, ASP.Net FrameWork,
+Intermediate &   Oracle Sales Cloud, Azure, LATEX, PHP, Apache2, Salesforce, ASP.NET FrameWork
 
 \end{tabular}
 
-\section{Extracurriculars}
+\section{\textcolor{HeaderColor}{Extracurriculars}}
 \begin{tabular}{r|l}
- \textsc{Aug.} 2018 - \textsc{May} 2019  &  \emph{Senior Capstone Project Team Leader} - Managed 5 peers in the design, \\& development, and deployment of an Android Application. 
+ \textsc{Aug.} 2018 - \textsc{May} 2019  &  \emph{\textcolor{HeaderColor}{Senior Capstone Project Team Leader}} - Managed 5 peers in the design, \\& development, and deployment of an Android application 
 \\
- \textsc{Aug.} 2015 - \textsc{May} 2019   & \emph{Member of the Association of Computing Machinery} - participated in \\& biannual Code-a thon competition and attended guest lectures. \\
+ \textsc{Aug.} 2015 - \textsc{May} 2019   & \emph{\textcolor{HeaderColor}{Member of the Association of Computing Machinery}} - participated in \\& biannual Code-a-thon competition and attended guest lectures \\
 \end{tabular}
 
-%Section: Scholarships and additional info
-\section{Scholarships and Certificates}
-\begin{tabular}{r|l}
- \textsc{May} 2019  & CyberSecurity Specialization certificate awarded by University of South Carolina. \\
-  \textsc{Aug.} 2015 - Current  & University of South Carolina Deans list, awarded 5 times.\\
- \textsc{Aug.} 2015 - \textsc{May} 2019   & Palmetto Life Schoalrship\normalsize
-
-
-\end{tabular}
 
 %Section: Languages
 %\section{Foreign Languages}
